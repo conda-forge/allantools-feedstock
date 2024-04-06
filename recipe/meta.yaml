@@ -1,4 +1,4 @@
-{% set name = "AllanTools" %}
+{% set name = "allantools" %}
 {% set version = "2024.4" %}
 
 package:
