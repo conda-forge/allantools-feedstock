@@ -1,5 +1,5 @@
 {% set name = "AllanTools" %}
-{% set version = "2019.9" %}
+{% set version = "2024.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e95204f688e1ed41602baf4e021ea021c0807bf00d4c2fea94c730f641feab51
+  sha256: 81b3274c83351ee573f754a62a66ad27b4e1ca7b9b36e47674d57d48622ce5be
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -19,10 +19,10 @@ requirements:
     - numpydoc
     - pytest-runner
     - setuptools
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - numpy
     - scipy
     
