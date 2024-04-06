@@ -1,4 +1,4 @@
-{% set name = "AllanTools" %}
+{% set name = "allantools" %}
 {% set version = "2024.4" %}
 
 package:
@@ -21,6 +21,7 @@ requirements:
     - setuptools
     - python >=3.6
     - pip
+    - hatchling
   run:
     - python >=3.6
     - numpy
