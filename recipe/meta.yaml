@@ -21,6 +21,7 @@ requirements:
     - setuptools
     - python >=3.6
     - pip
+    - hatchling
   run:
     - python >=3.6
     - numpy
